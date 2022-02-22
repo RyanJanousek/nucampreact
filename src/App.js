@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Main from "./components/MainComponent";
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import { ConfigureStore } from './redux/configureStore';
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { ConfigureStore } from "./redux/configureStore";
 import "./App.css";
 // this the correct location for this update?
 const store = ConfigureStore();
@@ -13,8 +13,8 @@ const store = ConfigureStore();
       <Main />
     </div>
   </BrowserRouter>
-</Provider>
-// the above correct? 
+</Provider>;
+// the above correct?
 
 class App extends Component {
   render() {
@@ -27,6 +27,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;
